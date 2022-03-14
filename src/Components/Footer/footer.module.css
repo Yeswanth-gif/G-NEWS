@@ -5,6 +5,8 @@
     color: white;
     text-align: center;
     padding: 10px;
+    position: fixed;
+    bottom: 0px;
 }
 
 .main_section > p {

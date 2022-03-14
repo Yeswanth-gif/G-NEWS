@@ -19,15 +19,29 @@ export default function Categories (props) {
                     </Form.Select>
                 </div>
                 <div className={classes.selection}>
+                    <span>Language</span>
+                    <Form.Select style={{width: '150px'}}  onClick={(e) => {return props.onlanguageclick(e.target.value)}}>
+                        <option  value = 'hi'>Hindi</option>
+                        <option  value = 'en'>English</option>
+                        <option  value = 'te'>Telugu</option>
+                        <option  value = 'fr'>French</option>
+                        <option  value = 'it'>Italian</option>
+                        <option  value = 'ru'>Russian</option>
+                        <option  value = 'de'>German</option>
+                    </Form.Select>
+                </div>
+                <div className={classes.selection}>
                     <span>Category</span>
                     <Form.Select style={{width: '150px'}}  onClick={(e) => {return props.oncategoryclick(e.target.value)}}>
+                        <option  value = 'world'>World</option>
                         <option  value = 'technology'>Technology</option>
-                        <option  value = 'business'>Business</option>
-                        <option  value = 'health'>Health</option>
-                        <option  value = 'science'>Science</option>
-                        <option  value = 'entertainment'>Entertainment</option>
+                        <option  value = 'breaking-news'>Breaking-News</option>
                         <option  value = 'sports'>Sports</option>
-
+                        <option  value = 'science'>Science</option>
+                        <option  value = 'health'>Health</option>
+                        <option  value = 'nation'>National</option>
+                        <option  value = 'business'>Business</option>
+                        <option  value = 'entertainment'>Entertainment</option>
                     </Form.Select>
                 </div>
             </div>

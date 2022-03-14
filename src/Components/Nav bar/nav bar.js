@@ -18,7 +18,7 @@ export default function NavBar({name, ...props}) {
             <Offcanvas.Title style={{color:'white'}}>Select Your Preferences
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Categories oncountryclick = {props.oncountryclick} oncategoryclick = {props.oncategoryclick} />
+          <Categories oncountryclick = {props.oncountryclick} onlanguageclick = {props.onlanguageclick} oncategoryclick = {props.oncategoryclick}/>
         </Offcanvas>
       </>
     );
