@@ -1,0 +1,30 @@
+.container {
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    display: inline-flex;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    justify-content: space-around;
+}
+.container > h3 {
+    display: inline-block;
+    background-color: orange;
+    border: 2px solid white;
+    color: white;
+    border-radius: 7px;
+    margin-top: 5px;
+    padding: 0px 3px;
+}
+
+
+@media screen and (max-width: 900px){
+    .container{
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+}

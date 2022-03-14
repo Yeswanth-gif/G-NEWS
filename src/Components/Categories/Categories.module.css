@@ -1,0 +1,21 @@
+.contanier {
+    width: 100%;
+    color: white;
+}
+h3 {
+    display: inline-block;
+    color: white;
+}
+.selection{
+    color: white;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.selection > span {
+    margin-right: 5px;
+}

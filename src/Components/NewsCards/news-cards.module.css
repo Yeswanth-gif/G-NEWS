@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card {
+    transition: transform .2s;
+    display: inline-block;
+    margin: 10px;
+    width: 30vw;
+
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width : 900px) {
+    .container {
+        grid-template-columns: auto auto ;
+    }
+
+    .card {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .container{
+        grid-template-columns: auto;
+    }
+    .card {
+        width: 90vw;
+        transition: none;
+    }
+    
+}
