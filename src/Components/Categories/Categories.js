@@ -31,7 +31,7 @@ export default function Categories (props) {
                 </div>
                 <div className={classes.selection}>
                     <span>Category</span>
-                    <Form.Select style={{width: '150px'}}  onClick={(e) => {return props.oncategoryclick(e.target.value)}}>
+                    <Form.Select style={{width: '150px'}}  onSelect={(e) => {return props.oncategoryclick(e.target.value)}}>
                         <option  value = 'world'>World</option>
                         <option  value = 'technology'>Technology</option>
                         <option  value = 'breaking-news'>Breaking-News</option>
