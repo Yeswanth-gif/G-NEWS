@@ -3,12 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Topbar from './Components/TopBar/Top-bar';
 import Newscard from './Components/NewsCards/news cards';
 import TypeAnimation from 'react-type-animation';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Footer from './Components/Footer/footer';
 
 function App() {
   const [country, setcountry] = useState('in')
-  const [language, setlanguage] = useState('hi')
+  const [language, setlanguage] = useState('en')
   const [category, setcategory] = useState('world')
 
   function countryclick(value){
@@ -20,6 +20,7 @@ function App() {
   function categoryclick(value){
     setcategory(value);
   }
+  
   return (
       <div className={classes.main}>
         

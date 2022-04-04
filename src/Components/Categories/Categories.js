@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import classes from './Categories.module.css'
 
 import { Form} from "react-bootstrap";
@@ -8,21 +8,20 @@ export default function Categories (props) {
             <div className={classes.container}>
                 <div className={classes.selection}>
                     <span>Country</span>
-                    <Form.Select style={{width: '150px'}} onClick = {(e) => {return props.oncountryclick(e.target.value)}}>
+                    <Form.Select style={{width: '150px'}} onChange = {(e) => {return props.oncountryclick(e.target.value)}}>
                         <option  value = 'in'>India</option>
                         <option  value = 'fr'>France</option>
                         <option  value = 'ru'>Russia</option>
                         <option  value = 'de'>Germany</option>
                         <option  value = 'au'>Australia</option>
-                        <option  value = 'it'>Italy</option>
-                        
+                        <option  value = 'it'>Italy</option>  
                     </Form.Select>
                 </div>
                 <div className={classes.selection}>
                     <span>Language</span>
-                    <Form.Select style={{width: '150px'}}  onClick={(e) => {return props.onlanguageclick(e.target.value)}}>
-                        <option  value = 'hi'>Hindi</option>
+                    <Form.Select style={{width: '150px'}}  onChange = {(e) => {return props.onlanguageclick(e.target.value)}}>
                         <option  value = 'en'>English</option>
+                        <option  value = 'hi'>Hindi</option>
                         <option  value = 'te'>Telugu</option>
                         <option  value = 'fr'>French</option>
                         <option  value = 'it'>Italian</option>
