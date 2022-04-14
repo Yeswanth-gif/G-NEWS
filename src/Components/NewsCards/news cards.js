@@ -6,12 +6,12 @@ export default function Newscard(props) {
     const [articles, setarticles] = useState([])
     const [loading, setloading] = useState(false)
 
-    // useEffect (() => {
-    //     setloading(true)
-    //     fetch(`https://gnews.io/api/v4/top-headlines?lang=${props.language}&country=${props.country}&topic=${props.category}&token=c2d03581ea39a14d9f4f722adb385d07`)
-    //     .then(response => {return response.json()})
-    //     .then(e => {setloading(false); setarticles(e.articles)})
-    // }, [props.country, props.language, props.category])
+    useEffect (() => {
+        setloading(true)
+        fetch(`https://gnews.io/api/v4/top-headlines?lang=${props.language}&country=${props.country}&topic=${props.category}&token=c2d03581ea39a14d9f4f722adb385d07`)
+        .then(response => {return response.json()})
+        .then(e => {setloading(false); setarticles(e.articles)})
+    }, [props.country, props.language, props.category])
 
     let cmp = articles.map((value, index) => {
         const d = new Date(value.publishedAt);
