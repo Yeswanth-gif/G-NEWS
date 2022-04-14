@@ -7,7 +7,7 @@ export default function Topbar (props) {
     return (
         <div className={classes.container}>
             <h3>{x}</h3>
-            <NavBar  name = 'test' scroll = {false} backdrop =  {true} oncountryclick = {props.countryclick} onlanguageclick = {props.languageclick} oncategoryclick = {props.categoryclick}/>
+            <NavBar  name = 'test' scroll = {true} backdrop =  {true}  onlanguageclick = {props.onlanguageclick} oncategoryclick = {props.oncategoryclick} oncountryclick = {props.oncountryclick} language = {props.language} country = {props.country} category = {props.category}/>
         </div>
     )
 }

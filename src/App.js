@@ -22,9 +22,8 @@ function App() {
   }
   
   return (
-      <div className={classes.main}>
-        
-        <Topbar countryclick = {countryclick} languageclick = {languageclick} categoryclick = {categoryclick}/>
+        <div className={classes.main}>
+        <Topbar  onlanguageclick = {languageclick} oncountryclick = {countryclick} oncategoryclick = {categoryclick} language = {language} country = {country} category = {category} />
         <TypeAnimation 
           className = {classes.animation}
           cursor={false}
@@ -32,7 +31,7 @@ function App() {
           wrapper="h2"
           repeat = {2}
         />
-        <Newscard country = {country} language = {language} category = {category}/>
+        <Newscard language = {language} country = {country} category = {category}/>
         <Footer/>
       </div>
   );
